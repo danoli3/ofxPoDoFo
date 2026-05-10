@@ -3,7 +3,6 @@
 
 #include "ofPath.h"
 #include <podofo/podofo.h>
-#include "ofxClipper.h"
 
 using namespace PoDoFo;
 

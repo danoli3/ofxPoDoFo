@@ -8,6 +8,8 @@ using std::vector;
 using std::string;
 using namespace PoDoFo;
 
+using ofxPoDoFo = podofo::Document;
+
 class Page {
 public:
 	void addPath(const ofPath &path) {
@@ -33,4 +35,4 @@ private:
 	std::vector<Page> page_;
 };
 
-//using ofxPoDoFo = podofo::Document;
+
