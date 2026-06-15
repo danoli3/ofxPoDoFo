@@ -1,6 +1,7 @@
 #pragma once
 
 #include "podofo.h"
+
 #include "ofPath.h"
 #include <string>
 
@@ -8,7 +9,7 @@ using std::vector;
 using std::string;
 using namespace PoDoFo;
 
-using ofxPoDoFo = podofo::Document;
+using ofxPoDoFo = PdfMemDocument;
 
 class Page {
 public:

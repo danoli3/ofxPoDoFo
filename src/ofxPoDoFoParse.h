@@ -3,6 +3,7 @@
 
 #include "ofPath.h"
 #include <podofo/podofo.h>
+#include <podofo/main/PdfContentStreamReader.h>
 
 using namespace PoDoFo;
 
@@ -19,7 +20,7 @@ public:
 		Context();
 		ofPath getClippedPath() const;
 	};
-	std::vector<ofPath> parse(PdfTokenizer *tokenizer, Parser::Context context=Parser::Context());
+	std::vector<ofPath> parse(const PoDoFo::PdfCanvas& canvas, Parser::Context context);
 };
 
 class Extractor {
